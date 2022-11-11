@@ -1,0 +1,53 @@
+###
+POST http://localhost:3977/api/v1/people/person HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Andres Felipe ",
+    "lastname": "Romero",
+    "email": "bhiguita@umanizales.edu.co",
+    "contact":{
+        "cellphone":"3203455795",
+        "address":{
+            "code_zip": 170004,
+            "city": "Manizales",
+            "geolocalization": [72567896, -2609855]
+        }
+    },
+    "proffession":{
+        "name": "Ing. sistemas y telecomunicaciones",
+        "organization": "Direktio",
+        "position_job": "Ing. soporte y calidad junior"
+    }    
+}
+###
+GET http://localhost:3977/api/v1/people/person HTTP/1.1
+
+###
+GET http://localhost:3977/api/v1/people/6348a4c14ce6c220ee06285b HTTP/1.1
+
+###
+PUT http://localhost:3977/api/v1/people/6348a4c14ce6c220ee06285b HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Andres",
+    "lastname": "Romero",
+    "email": "afromero69833@umanizales.edu.co",
+    "contact":{
+        "cellphone":"3113876367",
+        "address":{
+            "code_zip": 170004,
+            "city": "Manizales Edit",
+            "geolocalization": [723354326, -2653435]
+        }
+    },
+    "proffession":{
+        "name": "Ing. sistemas y telecomunicaciones",
+        "organization": "U Manizales",
+        "position_job": "Desarrollador FullStack"
+    } 
+}
+
+###
+DELETE http://localhost:3977/api/v1/people/6348a53a4ce6c220ee062863
